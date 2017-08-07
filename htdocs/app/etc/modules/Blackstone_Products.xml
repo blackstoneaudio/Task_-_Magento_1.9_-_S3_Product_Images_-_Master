@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Blackstone_Products>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Blackstone_Products>
+    </modules>
+</config>
