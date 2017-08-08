@@ -136,7 +136,7 @@ CREATE TABLE `admin_user` (
 
 LOCK TABLES `admin_user` WRITE;
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
-INSERT INTO `admin_user` VALUES (1,'blackstone','audio','tasks@blackstoneaudio.com','admin','d6a4a45796858ba21cac0ec66f898ced:EC7D8jOSSJunyaRpBRE4faXo39598Msu','2017-08-08 03:26:09','2017-08-08 03:26:09','2017-08-08 03:26:43',1,0,1,'b:0;',NULL,NULL);
+INSERT INTO `admin_user` VALUES (1,'blackstone','audio','tasks@blackstoneaudio.com','admin','d6a4a45796858ba21cac0ec66f898ced:EC7D8jOSSJunyaRpBRE4faXo39598Msu','2017-08-08 03:26:09','2017-08-08 03:26:09','2017-08-09 02:29:13',2,0,1,'a:1:{s:11:\"configState\";a:9:{s:7:\"web_url\";s:1:\"1\";s:7:\"web_seo\";s:1:\"1\";s:12:\"web_unsecure\";s:1:\"1\";s:10:\"web_secure\";s:1:\"1\";s:11:\"web_default\";s:1:\"0\";s:9:\"web_polls\";s:1:\"0\";s:10:\"web_cookie\";s:1:\"0\";s:11:\"web_session\";s:1:\"0\";s:24:\"web_browser_capabilities\";s:1:\"0\";}}',NULL,NULL);
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1746,7 +1746,6 @@ CREATE TABLE `catalog_product_index_eav_tmp` (
 
 LOCK TABLES `catalog_product_index_eav_tmp` WRITE;
 /*!40000 ALTER TABLE `catalog_product_index_eav_tmp` DISABLE KEYS */;
-INSERT INTO `catalog_product_index_eav_tmp` VALUES (1,121,1,2);
 /*!40000 ALTER TABLE `catalog_product_index_eav_tmp` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2428,7 +2427,6 @@ CREATE TABLE `catalog_product_index_price_tmp` (
 
 LOCK TABLES `catalog_product_index_price_tmp` WRITE;
 /*!40000 ALTER TABLE `catalog_product_index_price_tmp` DISABLE KEYS */;
-INSERT INTO `catalog_product_index_price_tmp` VALUES (1,0,1,2,29.9900,29.9900,29.9900,29.9900,NULL,NULL),(1,1,1,2,29.9900,29.9900,29.9900,29.9900,NULL,NULL),(1,2,1,2,29.9900,29.9900,29.9900,29.9900,NULL,NULL),(1,3,1,2,29.9900,29.9900,29.9900,29.9900,NULL,NULL);
 /*!40000 ALTER TABLE `catalog_product_index_price_tmp` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3766,7 +3764,7 @@ CREATE TABLE `core_config_data` (
   `value` text COMMENT 'Config Value',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `UNQ_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='Config Data';
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 COMMENT='Config Data';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3775,7 +3773,7 @@ CREATE TABLE `core_config_data` (
 
 LOCK TABLES `core_config_data` WRITE;
 /*!40000 ALTER TABLE `core_config_data` DISABLE KEYS */;
-INSERT INTO `core_config_data` VALUES (1,'default',0,'general/region/display_all','1'),(2,'default',0,'general/region/state_required','AT,CA,CH,DE,EE,ES,FI,FR,LT,LV,RO,US'),(3,'default',0,'catalog/category/root_id','2'),(4,'default',0,'payment/paypal_express/skip_order_review_step','1'),(5,'default',0,'payment/payflow_link/mobile_optimized','1'),(6,'default',0,'payment/payflow_advanced/mobile_optimized','1'),(7,'default',0,'payment/hosted_pro/mobile_optimized','1'),(8,'default',0,'admin/dashboard/enable_charts','1'),(9,'default',0,'web/unsecure/base_url','http://local.imagetest/'),(10,'default',0,'web/secure/base_url','http://local.imagetest/'),(11,'default',0,'general/locale/code','en_US'),(12,'default',0,'general/locale/timezone','America/Los_Angeles'),(13,'default',0,'currency/options/base','USD'),(14,'default',0,'currency/options/default','USD'),(15,'default',0,'currency/options/allow','USD');
+INSERT INTO `core_config_data` VALUES (1,'default',0,'general/region/display_all','1'),(2,'default',0,'general/region/state_required','AT,CA,CH,DE,EE,ES,FI,FR,LT,LV,RO,US'),(3,'default',0,'catalog/category/root_id','2'),(4,'default',0,'payment/paypal_express/skip_order_review_step','1'),(5,'default',0,'payment/payflow_link/mobile_optimized','1'),(6,'default',0,'payment/payflow_advanced/mobile_optimized','1'),(7,'default',0,'payment/hosted_pro/mobile_optimized','1'),(8,'default',0,'admin/dashboard/enable_charts','1'),(9,'default',0,'web/unsecure/base_url','{{base_url}}'),(10,'default',0,'web/secure/base_url','{{base_url}}'),(11,'default',0,'general/locale/code','en_US'),(12,'default',0,'general/locale/timezone','America/Los_Angeles'),(13,'default',0,'currency/options/base','USD'),(14,'default',0,'currency/options/default','USD'),(15,'default',0,'currency/options/allow','USD'),(16,'default',0,'web/url/use_store','0'),(17,'default',0,'web/url/redirect_to_base','1'),(18,'default',0,'web/seo/use_rewrites','0'),(19,'default',0,'web/unsecure/base_link_url','{{unsecure_base_url}}'),(20,'default',0,'web/unsecure/base_skin_url','{{unsecure_base_url}}skin/'),(21,'default',0,'web/unsecure/base_media_url','{{unsecure_base_url}}media/'),(22,'default',0,'web/unsecure/base_js_url','{{unsecure_base_url}}js/'),(23,'default',0,'web/secure/base_link_url','{{secure_base_url}}'),(24,'default',0,'web/secure/base_skin_url','{{secure_base_url}}skin/'),(25,'default',0,'web/secure/base_media_url','{{secure_base_url}}media/'),(26,'default',0,'web/secure/base_js_url','{{secure_base_url}}js/'),(27,'default',0,'web/secure/use_in_frontend','0'),(28,'default',0,'web/secure/use_in_adminhtml','0'),(29,'default',0,'web/secure/offloader_header','SSL_OFFLOADED'),(30,'default',0,'web/default/front','cms'),(31,'default',0,'web/default/cms_home_page','home'),(32,'default',0,'web/default/no_route','cms/index/noRoute'),(33,'default',0,'web/default/cms_no_route','no-route'),(34,'default',0,'web/default/cms_no_cookies','enable-cookies'),(35,'default',0,'web/default/show_cms_breadcrumbs','1'),(36,'default',0,'web/polls/poll_check_by_ip','0'),(37,'default',0,'web/cookie/cookie_lifetime','3600'),(38,'default',0,'web/cookie/cookie_path',NULL),(39,'default',0,'web/cookie/cookie_domain',NULL),(40,'default',0,'web/cookie/cookie_httponly','1'),(41,'default',0,'web/cookie/cookie_restriction','0'),(42,'default',0,'web/session/use_remote_addr','0'),(43,'default',0,'web/session/use_http_via','0'),(44,'default',0,'web/session/use_http_x_forwarded_for','0'),(45,'default',0,'web/session/use_http_user_agent','0'),(46,'default',0,'web/session/use_frontend_sid','1'),(47,'default',0,'web/browser_capabilities/cookies','1'),(48,'default',0,'web/browser_capabilities/javascript','1');
 /*!40000 ALTER TABLE `core_config_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3982,7 +3980,7 @@ CREATE TABLE `core_resource` (
 
 LOCK TABLES `core_resource` WRITE;
 /*!40000 ALTER TABLE `core_resource` DISABLE KEYS */;
-INSERT INTO `core_resource` VALUES ('adminnotification_setup','1.6.0.0','1.6.0.0'),('admin_setup','1.6.1.2','1.6.1.2'),('api2_setup','1.0.0.0','1.0.0.0'),('api_setup','1.6.0.1','1.6.0.1'),('backup_setup','1.6.0.0','1.6.0.0'),('blackstone_products_setup','1.2.7','1.2.7'),('bundle_setup','1.6.0.0.1','1.6.0.0.1'),('captcha_setup','1.7.0.0.0','1.7.0.0.0'),('catalogindex_setup','1.6.0.0','1.6.0.0'),('cataloginventory_setup','1.6.0.0.2','1.6.0.0.2'),('catalogrule_setup','1.6.0.3','1.6.0.3'),('catalogsearch_setup','1.8.2.0','1.8.2.0'),('catalog_setup','1.6.0.0.19.1.5','1.6.0.0.19.1.5'),('checkout_setup','1.6.0.0','1.6.0.0'),('cms_setup','1.6.0.0.2','1.6.0.0.2'),('compiler_setup','1.6.0.0','1.6.0.0'),('contacts_setup','1.6.0.0','1.6.0.0'),('core_setup','1.6.0.7','1.6.0.7'),('cron_setup','1.6.0.0','1.6.0.0'),('customer_setup','1.6.2.0.5','1.6.2.0.5'),('dataflow_setup','1.6.0.0','1.6.0.0'),('directory_setup','1.6.0.3','1.6.0.3'),('downloadable_setup','1.6.0.0.2','1.6.0.0.2'),('eav_setup','1.6.0.1','1.6.0.1'),('giftmessage_setup','1.6.0.0','1.6.0.0'),('googleanalytics_setup','1.6.0.0','1.6.0.0'),('importexport_setup','1.6.0.2','1.6.0.2'),('index_setup','1.6.0.0','1.6.0.0'),('log_setup','1.6.1.1','1.6.1.1'),('moneybookers_setup','1.6.0.0','1.6.0.0'),('newsletter_setup','1.6.0.2','1.6.0.2'),('oauth_setup','1.0.0.0','1.0.0.0'),('paygate_setup','1.6.0.0','1.6.0.0'),('payment_setup','1.6.0.0','1.6.0.0'),('paypaluk_setup','1.6.0.0','1.6.0.0'),('paypal_setup','1.6.0.6','1.6.0.6'),('persistent_setup','1.0.0.0','1.0.0.0'),('poll_setup','1.6.0.1','1.6.0.1'),('productalert_setup','1.6.0.0','1.6.0.0'),('rating_setup','1.6.0.1','1.6.0.1'),('reports_setup','1.6.0.0.1','1.6.0.0.1'),('review_setup','1.6.0.0','1.6.0.0'),('rss_setup','1.6.0.0','1.6.0.0'),('salesrule_setup','1.6.0.3','1.6.0.3'),('sales_setup','1.6.0.10','1.6.0.10'),('sendfriend_setup','1.6.0.1','1.6.0.1'),('shipping_setup','1.6.0.0','1.6.0.0'),('sitemap_setup','1.6.0.0','1.6.0.0'),('tag_setup','1.6.0.0','1.6.0.0'),('tax_setup','1.6.0.4','1.6.0.4'),('usa_setup','1.6.0.3','1.6.0.3'),('weee_setup','1.6.0.0','1.6.0.0'),('widget_setup','1.6.0.0','1.6.0.0'),('wishlist_setup','1.6.0.0','1.6.0.0');
+INSERT INTO `core_resource` VALUES ('adminnotification_setup','1.6.0.0','1.6.0.0'),('admin_setup','1.6.1.2','1.6.1.2'),('api2_setup','1.0.0.0','1.0.0.0'),('api_setup','1.6.0.1','1.6.0.1'),('backup_setup','1.6.0.0','1.6.0.0'),('blackstone_customerlibrary_setup','0.2.3','0.2.3'),('blackstone_products_setup','1.2.7','1.2.7'),('bundle_setup','1.6.0.0.1','1.6.0.0.1'),('captcha_setup','1.7.0.0.0','1.7.0.0.0'),('catalogindex_setup','1.6.0.0','1.6.0.0'),('cataloginventory_setup','1.6.0.0.2','1.6.0.0.2'),('catalogrule_setup','1.6.0.3','1.6.0.3'),('catalogsearch_setup','1.8.2.0','1.8.2.0'),('catalog_setup','1.6.0.0.19.1.5','1.6.0.0.19.1.5'),('checkout_setup','1.6.0.0','1.6.0.0'),('cms_setup','1.6.0.0.2','1.6.0.0.2'),('compiler_setup','1.6.0.0','1.6.0.0'),('contacts_setup','1.6.0.0','1.6.0.0'),('core_setup','1.6.0.7','1.6.0.7'),('cron_setup','1.6.0.0','1.6.0.0'),('customer_setup','1.6.2.0.5','1.6.2.0.5'),('dataflow_setup','1.6.0.0','1.6.0.0'),('directory_setup','1.6.0.3','1.6.0.3'),('downloadable_setup','1.6.0.0.2','1.6.0.0.2'),('eav_setup','1.6.0.1','1.6.0.1'),('giftmessage_setup','1.6.0.0','1.6.0.0'),('googleanalytics_setup','1.6.0.0','1.6.0.0'),('importexport_setup','1.6.0.2','1.6.0.2'),('index_setup','1.6.0.0','1.6.0.0'),('log_setup','1.6.1.1','1.6.1.1'),('moneybookers_setup','1.6.0.0','1.6.0.0'),('newsletter_setup','1.6.0.2','1.6.0.2'),('oauth_setup','1.0.0.0','1.0.0.0'),('paygate_setup','1.6.0.0','1.6.0.0'),('payment_setup','1.6.0.0','1.6.0.0'),('paypaluk_setup','1.6.0.0','1.6.0.0'),('paypal_setup','1.6.0.6','1.6.0.6'),('persistent_setup','1.0.0.0','1.0.0.0'),('poll_setup','1.6.0.1','1.6.0.1'),('productalert_setup','1.6.0.0','1.6.0.0'),('rating_setup','1.6.0.1','1.6.0.1'),('reports_setup','1.6.0.0.1','1.6.0.0.1'),('review_setup','1.6.0.0','1.6.0.0'),('rss_setup','1.6.0.0','1.6.0.0'),('salesrule_setup','1.6.0.3','1.6.0.3'),('sales_setup','1.6.0.10','1.6.0.10'),('sendfriend_setup','1.6.0.1','1.6.0.1'),('shipping_setup','1.6.0.0','1.6.0.0'),('sitemap_setup','1.6.0.0','1.6.0.0'),('tag_setup','1.6.0.0','1.6.0.0'),('tax_setup','1.6.0.4','1.6.0.4'),('usa_setup','1.6.0.3','1.6.0.3'),('weee_setup','1.6.0.0','1.6.0.0'),('widget_setup','1.6.0.0','1.6.0.0'),('wishlist_setup','1.6.0.0','1.6.0.0');
 /*!40000 ALTER TABLE `core_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -6484,7 +6482,7 @@ CREATE TABLE `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -6493,7 +6491,7 @@ CREATE TABLE `log_visitor` (
 
 LOCK TABLES `log_visitor` WRITE;
 /*!40000 ALTER TABLE `log_visitor` DISABLE KEYS */;
-INSERT INTO `log_visitor` VALUES (1,'omm76kbju87ppbgdvsid57l0g3','2017-08-08 03:26:45','2017-08-08 03:55:44',0,1);
+INSERT INTO `log_visitor` VALUES (1,'omm76kbju87ppbgdvsid57l0g3','2017-08-08 03:26:45','2017-08-08 03:55:44',0,1),(2,'flmd3up8avkmubaoo5n9ivc7d0','2017-08-09 02:13:30','2017-08-09 02:30:35',0,1),(3,'5ko7602obmkvt7rkubog4g9o02','2017-08-09 02:30:28','2017-08-09 02:41:06',0,1);
 /*!40000 ALTER TABLE `log_visitor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -6522,7 +6520,7 @@ CREATE TABLE `log_visitor_info` (
 
 LOCK TABLES `log_visitor_info` WRITE;
 /*!40000 ALTER TABLE `log_visitor_info` DISABLE KEYS */;
-INSERT INTO `log_visitor_info` VALUES (1,NULL,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',NULL,'en-US,en;q=0.8','\0\0','\0\0');
+INSERT INTO `log_visitor_info` VALUES (1,NULL,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',NULL,'en-US,en;q=0.8','\0\0','\0\0'),(2,NULL,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',NULL,'en-US,en;q=0.8','\0\0','\0\0'),(3,NULL,'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',NULL,'en-US,en;q=0.8','\0\0','\0\0');
 /*!40000 ALTER TABLE `log_visitor_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7499,7 +7497,7 @@ CREATE TABLE `report_event` (
   KEY `IDX_REPORT_EVENT_STORE_ID` (`store_id`),
   CONSTRAINT `FK_REPORT_EVENT_EVENT_TYPE_ID_REPORT_EVENT_TYPES_EVENT_TYPE_ID` FOREIGN KEY (`event_type_id`) REFERENCES `report_event_types` (`event_type_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_EVENT_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='Reports Event Table';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='Reports Event Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -7508,7 +7506,7 @@ CREATE TABLE `report_event` (
 
 LOCK TABLES `report_event` WRITE;
 /*!40000 ALTER TABLE `report_event` DISABLE KEYS */;
-INSERT INTO `report_event` VALUES (1,'2017-08-08 03:41:59',1,1,1,1,1),(2,'2017-08-08 03:43:29',4,1,1,1,1),(3,'2017-08-08 03:44:44',1,1,1,1,1),(4,'2017-08-08 03:55:44',1,1,1,1,1);
+INSERT INTO `report_event` VALUES (1,'2017-08-08 03:41:59',1,1,1,1,1),(2,'2017-08-08 03:43:29',4,1,1,1,1),(3,'2017-08-08 03:44:44',1,1,1,1,1),(4,'2017-08-08 03:55:44',1,1,1,1,1),(5,'2017-08-09 02:13:40',1,1,2,1,1),(6,'2017-08-09 02:30:34',1,1,2,1,1);
 /*!40000 ALTER TABLE `report_event` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -7671,7 +7669,7 @@ CREATE TABLE `report_viewed_product_index` (
 
 LOCK TABLES `report_viewed_product_index` WRITE;
 /*!40000 ALTER TABLE `report_viewed_product_index` DISABLE KEYS */;
-INSERT INTO `report_viewed_product_index` VALUES (1,1,NULL,1,1,'2017-08-08 03:55:44');
+INSERT INTO `report_viewed_product_index` VALUES (1,1,NULL,1,1,'2017-08-08 03:55:44'),(2,2,NULL,1,1,'2017-08-09 02:30:34');
 /*!40000 ALTER TABLE `report_viewed_product_index` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -9217,7 +9215,7 @@ CREATE TABLE `sales_flat_quote_item` (
   CONSTRAINT `FK_SALES_FLAT_QUOTE_ITEM_PRD_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`product_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_SALES_FLAT_QUOTE_ITEM_QUOTE_ID_SALES_FLAT_QUOTE_ENTITY_ID` FOREIGN KEY (`quote_id`) REFERENCES `sales_flat_quote` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_SALES_FLAT_QUOTE_ITEM_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Sales Flat Quote Item';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Sales Flat Quote Item';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -9245,7 +9243,7 @@ CREATE TABLE `sales_flat_quote_item_option` (
   PRIMARY KEY (`option_id`),
   KEY `IDX_SALES_FLAT_QUOTE_ITEM_OPTION_ITEM_ID` (`item_id`),
   CONSTRAINT `FK_5F20E478CA64B6891EA8A9D6C2735739` FOREIGN KEY (`item_id`) REFERENCES `sales_flat_quote_item` (`item_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='Sales Flat Quote Item Option';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Sales Flat Quote Item Option';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -11037,4 +11035,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-08-07 16:01:31
+-- Dump completed on 2017-08-08 12:42:13
