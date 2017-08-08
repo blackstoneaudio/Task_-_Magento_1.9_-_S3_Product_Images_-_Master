@@ -8,14 +8,14 @@ What we would like from you, is to display the matterhorn cover image in place o
 
 You'll find a copy of the database to match the repo sitting in the root as 'image-task.sql' please use that along with the code from the repo to complete the task
 
---db credentials (as set in htdocs/app/etc/local.xml)--
-user: root
-pwd:
+--db credentials (as set in htdocs/app/etc/local.xml)--  
+user: root  
+pwd:  
 
---magento backend credentials--
-username: admin
-pwd: task123
-email: tasks@blackstoneaudio.com
+--magento backend credentials--  
+username: admin  
+pwd: task123  
+email: tasks@blackstoneaudio.com  
 
---magento encryption key--
-2fbe5c29f95c0606712bded10e8034f5
+--magento encryption key--  
+2fbe5c29f95c0606712bded10e8034f5  
