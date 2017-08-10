@@ -6,20 +6,6 @@
         </Blackstone_Products>
     </modules>
     <global>
-        <models>
-            <blackstone_products>
-                <class>Blackstone_Products_Model</class>
-                <resourceModel>blackstone_products_resource</resourceModel>
-            </blackstone_products>
-            <blackstone_products_resource>
-                <class>Blackstone_Products_Model_Resource</class>
-            </blackstone_products_resource>
-        </models>
-        <blocks>
-            <blackstone_products>
-                <class>Blackstone_Products_Block</class>
-            </blackstone_products>
-        </blocks>
         <helpers>
             <blackstone_products>
                 <class>Blackstone_Products_Helper</class>
