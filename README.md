@@ -6,7 +6,9 @@ You'll notice that the image path is the cloudfront base url, followed by the fi
 
 What we would like from you, is to display the matterhorn cover image in place of the default image on the product page ('http://{{your-install}}/catalog/product/view/id/1') as well as in the shopping cart when the book is added.
 
-You'll find a copy of the database to match the repo sitting in the root as 'task-db.sql' please use that along with the code from the repo to complete the task
+You'll find a copy of the database to match the repo sitting in the root as 'task-db.sql' please use that along with the code from the repo to complete the task.
+
+When complete, please zip your code and a database dump file along with a short write up of how you addressed the task. Send this to your contact at Blackstone. We prefer google drive for the large files, but other services can also work.
 
 --db credentials (as set in htdocs/app/etc/local.xml)--  
 user: root  
